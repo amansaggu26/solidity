@@ -2,6 +2,7 @@
 
 Features:
  * SMTChecker: Integration with CVC4 SMT solver
+ * Syntax Checker: Warn about functions named "constructor".
 
 Bugfixes:
 
