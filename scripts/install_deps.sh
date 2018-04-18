@@ -305,6 +305,11 @@ case $(uname -s) in
                         echo "Installing solidity dependencies on Ubuntu Artful (17.10)."
                         install_z3="libz3-dev"
                         ;;
+                    bionic)
+                        #artful
+                        echo "Installing solidity dependencies on Ubuntu Bionic (18.04)."
+                        install_z3="libz3-dev"
+                        ;;
                     betsy)
                         #do not try anything for betsy.
                         echo "Linux Mint Betsy is not supported at the moment as it runs off of Debian."
@@ -319,7 +324,7 @@ case $(uname -s) in
                         echo "ERROR - Unknown or unsupported Ubuntu version (" $(lsb_release -cs) ")"
                         echo "ERROR - This might not work, but we are trying anyway."
                         echo "Please drop us a message at https://gitter.im/ethereum/solidity-dev."
-                        echo "We only support Trusty, Utopic, Vivid, Wily, Xenial, Yakkety, Zesty and Artful."
+                        echo "We only support Trusty, Utopic, Vivid, Wily, Xenial, Yakkety, Zesty, Artful and Bionic."
                         install_z3="libz3-dev"
                         ;;
                 esac
